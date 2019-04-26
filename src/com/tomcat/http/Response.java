@@ -10,7 +10,7 @@ public class Response {
 
     public OutputStream outputStream;
 
-    public static final String responseHeader = "HTTP/1.1 200 \r\n"
+    public static final String RESPONSE_HEADER = "HTTP/1.1 200 \r\n"
             + "Content-Type: text/html\r\n"
             + "\r\n";
 

@@ -29,7 +29,7 @@ public class SocketProcess extends Thread {
             if (servlet != null) {
                 servlet.service(request, response);
             } else {
-                String res = Response.responseHeader + "Hello World";
+                String res = Response.RESPONSE_HEADER + "Hello World";
                 OutputStream outputStream = socket.getOutputStream();
                 outputStream.write(res.getBytes());
                 outputStream.flush();

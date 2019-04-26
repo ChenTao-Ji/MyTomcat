@@ -19,7 +19,7 @@ public class LoginServlet extends Servlet {
     public void doPost(Request request, Response response) {
         try {
             OutputStream outputStream = response.outputStream;
-            String res = Response.responseHeader + "Hello,welcome to here !";
+            String res = Response.RESPONSE_HEADER + "Hello,welcome to here !";
             outputStream.write(res.getBytes());
             outputStream.flush();
             outputStream.close();
