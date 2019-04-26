@@ -3,6 +3,9 @@ package com.tomcat.http;
 import java.io.IOException;
 import java.io.OutputStream;
 
+/**
+ * @author chentao.ji
+ */
 public class Response {
 
     public OutputStream outputStream;

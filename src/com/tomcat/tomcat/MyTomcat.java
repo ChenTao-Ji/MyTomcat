@@ -11,9 +11,12 @@ import java.util.HashMap;
 import java.util.Properties;
 import java.util.Set;
 
+/**
+ * @author chentao.ji
+ */
 public class MyTomcat {
 
-    private int port = 8099;
+    private int port;
     private static final Properties properties = new Properties();
     public static final HashMap<String, Servlet> servletMapping = new HashMap<>();
 
@@ -82,7 +85,7 @@ public class MyTomcat {
     }
 
     public static void main(String[] args) {
-        MyTomcat myTomcat = new MyTomcat(8099);
+        new MyTomcat(8099);
     }
 
 }

@@ -7,6 +7,9 @@ import com.tomcat.servlet.Servlet;
 import java.io.OutputStream;
 import java.net.Socket;
 
+/**
+ * @author chentao.ji
+ */
 public class SocketProcess extends Thread {
 
     protected Socket socket;
